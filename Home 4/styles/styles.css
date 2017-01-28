@@ -1,14 +1,18 @@
+body {
+    text-align: justify;
+    width: 80%;
+    margin: 5% auto 0;
+    background: url(../image/1.jpg);
+}
+
 table, td, th {
     border: 1px solid black;
-
     border-collapse: collapse;
-
 }
 
 tfoot tr td:first-child {
     text-align: left;
     width: 25%;
-
 }
 
 tfoot tr td {
@@ -27,21 +31,17 @@ tr {
 
 thead {
     font-weight: bold;
-    background: gray;
+    background: darkgreen;
     text-align: center;
 }
 
 tbody {
     background: lightblue;
-    }
+}
 
 tfoot {
     background: cadetblue;
     font-weight: bold;
-}
-
-.menu > li:first-child {
-    border-left: 0;
 }
 
 .menu > li {
@@ -50,93 +50,46 @@ tfoot {
     border-collapse: collapse;
     width: 20%;
     text-align: center;
-    background: springgreen;
-
 }
 
-a {
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: black;
+    color: white;
     text-decoration: none;
-
-}
-
-.menu::after {
-    content: '';
-    display: inline-block;
-
+    border-collapse: collapse;
 }
 
 ul {
-    margin: 0;
     padding: 0;
     list-style: none;
-
+    width: 100%;
 }
 
-.menu > li > a {
-    display: block;
-    padding: 20px 30px;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: black;
-
-}
-
-.submenu {
+.menu ul {
     position: absolute;
-    border: 1px solid black;
-    background: lightgrey;
     visibility: hidden;
-    transform-origin: 0% 0%;
-    width: 215px;
-
 }
 
-.submenu li {
+.menu ul li {
     position: relative;
+    text-align: left;
 }
 
-.submenu > li > a {
-    color: black;
-    display: block;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-bottom: 1px solid black;
-}
-
-.submenu .submenu {
+.menu ul ul {
     position: absolute;
     left: 100%;
     top: -1px;
-
 }
 
-.submenu > li {
-    position: relative;
-}
-
-li:hover > .submenu {
+li:hover > ul {
     visibility: visible;
-    opacity: 1;
-
 }
 
-body {
-    background: cornsilk;
-    text-align: justify;
-    width: 80%;
-    margin: 5% auto 0;
-    background: url(../image/1.jpg);
+.menu a:hover {
+    color: black;
+    background: grey;
 }
-
-.submenu > li > a:hover {
-    color: white;
-    background: black;
-    font-weight: bolder;
-}
-
-.menu > li > a:hover {
-    font-weight: bolder;
-    color: white;
-    background: black;
-}
-
