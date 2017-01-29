@@ -23,6 +23,7 @@ table {
     text-align: justify;
     width: 100%;
     margin: 10% auto 0;
+    margin-top: 150px;
 }
 
 tr {
@@ -44,52 +45,72 @@ tfoot {
     font-weight: bold;
 }
 
-.menu > li {
-    float: left;
-    position: relative;
-    border-collapse: collapse;
-    width: 20%;
+
+
+.menu {
     text-align: center;
+    font-size: 0;
+    padding: 0;
+
+}
+
+.menu > li {
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+
 }
 
 .menu a {
-    display: block;
-    padding: 15px 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    background: black;
-    color: white;
     text-decoration: none;
-    border-collapse: collapse;
+    color: white;
+    display: block;
+    padding: 15px;
 }
 
-ul {
-    padding: 0;
-    list-style: none;
-    width: 100%;
+.menu li:hover > a {
+    color: black;
+    background: grey;
+
 }
 
 .menu ul {
+    display: none;
     position: absolute;
-    visibility: hidden;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    text-align: left;
+    background: black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
 }
 
+.menu li:hover > ul {
+    display: block;
+
+
+}
+
+.menu > li > ul {
+    top: 100%;
+    left: 0;
+
+}
+
+
+.menu li {
+    background: black;
+
+}
 .menu ul li {
     position: relative;
-    text-align: left;
+
 }
 
-.menu ul ul {
-    position: absolute;
-    left: 100%;
-    top: -1px;
-}
 
-li:hover > ul {
-    visibility: visible;
-}
 
-.menu a:hover {
-    color: black;
-    background: grey;
-}
