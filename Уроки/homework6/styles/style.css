@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+
+
+}
+header {
+    width: 350px;
+    min-height: 100%;
+    background: yellow;
+}
+.fix {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 100%;
+    width: 100%;
+}
+.navigation {
+    background: blue;
+    width: 100%;
+    height: 150px;
+}
+.content {
+    flex-grow: 1;
+}
+
+.ad {
+    background: red;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 250px;
+
+}
+
+.footer {
+    background: green;
+    width: 100%;
+    height: 80px;
+}
+
+.abc {
+    flex-grow: 1;
+    display: flex;
+
+    width: 100%;
