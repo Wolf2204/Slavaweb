@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    text-indent: 20px;
+
+}
+
+
+header {
+    flex: 0 0 200px;
+    background: black;
+    text-transform: uppercase;
+    font-size: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+a:hover {
+    background: grey;
+    color: black;
+}
+
+ul {
+    text-indent: 10px;
+    padding: 0;
+    width: 100%;
+
+}
+
+#content {
+    margin: 0 10px 0 20px;
+
+}
+
+h1 {
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.main a::before {
+    content: '\1F319';
+    color: red;
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+    text-indent: 0;
+
+}
+
+.about a::before {
+    content: '\003F \003F';
+    color: red;
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+    text-indent: 0;
+
+}
+
+.contacts a::before {
+    content: '\1F4E8';
+    color: red;
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+    text-indent: 0;
+
+}
+
+a[target="_blank"]::before {
+    content: '\00A3';
+    color: red;
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+    text-indent: 0;
+
+}
+
+a[target="_blank"]::after {
+    content: '\2197';
+    color: red;
+    display: inline-block;
+
+}
+
+nav {
+    display: none;
+}
+
+nav:target {
+    display: inline;
+}
+
+@media all and (min-width: 451px) and (max-width: 960px) {
+
+    header {
+        max-width: 60px;
+    }
+
+    span {
+        display: none;
+    }
+
+    a[target='_blank']::after {
+        display: none;
+    }
+
+    ul {
+        text-indent: 0;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+    body {
+        flex-direction: column;
+
+    }
+
+    header {
+        flex: 0 0 40px;
+        min-width: 40px;
+        position: relative;
+
+    }
+
+    section {
+        padding-left: 0;
+    }
+
+    ul {
+        width: 100%;
+        min-height: 40px;
+        display: flex;
+
+    }
+
+    li {
+        min-width: 25%;
+
+    }
+
+    a {
+        text-align: center;
+        text-indent: 0;
+        color: black;
+        padding: 0;
+        min-height: 33px;
+        padding-top: 7px;
+
+    }
+
+    span {
+        display: none;
+    }
+
+    a[target='_blank']::after {
+        display: none;
+    }
+}
+
+
+
+
+
