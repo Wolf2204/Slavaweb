@@ -1,0 +1,220 @@
+body {
+
+    margin-left: 170px;
+    margin-right: 170px;
+    border: 2px solid white;
+    min-height: 96.5vh;
+    border-radius: 7px;
+    box-shadow: 0 0 6px black;
+
+}
+
+h2 {
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+}
+
+input:required + label::after {
+    content: "*";
+    color: red;
+}
+
+.name input {
+    order: 1;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+form > .name > input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    min-width: 50%;
+
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid lightseagreen;
+}
+
+label {
+    min-width: 100px;
+    text-align: right;
+}
+.gender {
+    display: flex;
+    justify-content: center;
+
+
+}
+.gender label {
+    flex: 0 0 100px;
+}
+fieldset {
+    width: 50%;
+    border-color: rgba(114, 170, 180, 0.15);
+    margin-bottom: 10px;
+    padding: 0;
+}
+fieldset > div {
+    margin-bottom: 5px;
+}
+
+
+select {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgba(89, 78, 180, 0.15);
+    min-width: 50%;
+    margin-bottom: 10px;
+}
+
+select:focus {
+    outline: none;
+    border-bottom: 2px solid lightseagreen;
+}
+
+textarea {
+    max-width: 50%;
+    min-width: 50%;
+    order: 1;
+    margin-bottom: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgba(89, 78, 180, 0.15);
+    padding: 0;
+
+}
+
+textarea:required + label::after {
+    content: "*";
+    color: red;
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom: 2px solid lightseagreen;
+}
+
+.name1 {
+    text-align: center;
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.button input {
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 0 6px black;
+    border-radius: 7px;
+}
+
+.button input:active {
+    border-color: grey;
+    box-shadow: inset 0 1px 6px #000;
+}
+
+.button input:focus {
+    outline: none;
+    border: 2px solid lightseagreen;
+    border-radius: 7px;
+}
+
+select {
+    height: 25px;
+}
+
+@media all and (max-width: 600px) {
+    body {
+        margin: 5px;
+    }
+
+    form {
+        width: 95%;
+        margin: 10px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .name > input {
+        width: 100%;
+        outline: 2px solid lightgray;
+        border: none;
+        margin: 0 0 10px 0;
+
+    }
+
+    label {
+        text-align: left;
+    }
+
+    fieldset {
+        width: 100%;
+        margin: 0 0 10px 0;
+        padding: 0;
+        border: 2px solid lightgray;
+
+    }
+
+    fieldset > div {
+
+        flex-direction: row;
+        margin: 10px;
+
+    }
+
+    legend {
+        margin-left: 10px;
+    }
+
+    .name1 {
+        flex-direction: row;
+
+    }
+
+    textarea {
+        min-width: 100%;
+        outline: 2px solid lightgray;
+        padding: 0;
+        border: none;
+
+    }
+
+    select {
+        outline: 2px solid lightgray;
+        border: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border: none;
+        outline: 2px solid lightseagreen;
+    }
+
+    .button input {
+        min-width: 100%;
+    }
+    .gender label {
+        display: none;
+    }
+
+
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<h2>User profile</h2>
+<form action="" method="post">
+    <div class="name">
+        <input type="text" id="name1" required>
+        <label for="name1">First name</label>
+    </div>
+    <div class="name">
+        <input type="text" id="name2" required>
+        <label for="name2">Last name</label>
+    </div>
+    <div class="name">
+        <input type="text" id="name3">
+        <label for="name3">Surname&nbsp;&nbsp;</label>
+    </div>
+    <div class="name">
+        <input type="date" id="date" required>
+        <label for="date">Birth date</label>
+    </div>
+    <div class="gender">
+        <label></label>
+        <fieldset>
+            <legend>Gender</legend>
+            <div>
+                <input id="genderMale" type="radio" name="gender" value="male" checked>
+                <label for="genderMale">Male</label>
+            </div>
+            <div>
+                <input id="genderFemale" type="radio" name="gender" value="female">
+                <label for="genderFemale">Female</label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="name">
+        <input type="email" id="email" required>
+        <label for="email">E-mail</label>
+    </div>
+
+    <div class="name">
+        <input type="text" id="number">
+        <label for="number">Phone number&nbsp;&nbsp;</label>
+    </div>
+    <div class="name">
+        <label for="Country">Country&nbsp;&nbsp;</label>
+        <select name="Country" id="Country">
+            <option value="Russia">Россия</option>
+            <option value="USA">США</option>
+            <option value="China">Китай</option>
+        </select>
+    </div>
+    <div class="name">
+        <textarea id="textInput" required></textarea>
+        <label for="textInput">Address</label>
+    </div>
+    <div class="name1">
+        <input type="checkbox" name="agreement" id="agreementInput" required>
+        <label for="agreementInput">I accept the terms in the <a href="#">license agreement</a></label>
+    </div>
+    <div class="button">
+        <input type="submit" value="Save">
+    </div>
+</form>
+
+</body>
+</html>
