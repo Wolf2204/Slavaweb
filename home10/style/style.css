@@ -211,7 +211,7 @@ select {
     .button input {
         min-width: 100%;
     }
-    .gender label {
+    .gender > label {
         display: none;
     }
 
