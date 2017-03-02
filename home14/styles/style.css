@@ -325,7 +325,10 @@ body footer .users .used div > section {
   align-items: center;
   color: black;
 }
-body footer .users .used div > section > img {
+body footer .users .used div > section > a {
+  padding-top: 1px;
+}
+body footer .users .used div > section img {
   width: 25px;
   height: 25px;
   margin-right: 15px;
