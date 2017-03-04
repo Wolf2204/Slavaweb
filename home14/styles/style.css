@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ececec;
+  font-family: "Segoe UI", sans-serif;
 }
 body div.like img {
   width: 12px;
@@ -16,13 +17,14 @@ body img.icon {
   border-radius: 20px;
 }
 body header {
-  background-color: #2744d6;
+  background: linear-gradient(to top, #3944fe, #2c74f1);
   flex: 0 0 40px;
+  margin: 0 auto 0 auto;
+  width: 1360px;
 }
 body header div {
   display: flex;
   justify-content: space-between;
-  width: 70%;
   margin: auto;
   height: 100%;
 }
@@ -32,7 +34,7 @@ body header div form {
   width: 350px;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 253px;
 }
 body header div form img {
   margin-left: 25px;
@@ -55,7 +57,7 @@ body header div #user {
   display: flex;
   width: 200px;
   color: white;
-  margin-top: 0;
+  margin-right: 200px;
   align-items: center;
   justify-content: center;
 }
@@ -82,12 +84,12 @@ body header div #user > button:focus {
   outline: none;
   box-shadow: 0 0 10px #00004f;
 }
-body footer {
-  width: 75%;
+body span {
+  width: 1020px;
   margin: 10px auto 0 auto;
   display: flex;
 }
-body footer div.border {
+body span div.border {
   border-right: 10px solid white;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
@@ -95,46 +97,46 @@ body footer div.border {
   height: 1px;
   margin-top: 25px;
 }
-body footer .content {
+body span .content {
   display: flex;
-  width: 70%;
+  width: 693px;
   flex-direction: column;
   border-right: 1px solid rgba(168, 198, 193, 0.52);
 }
-body footer .content #plus {
+body span .content #plus {
   margin-left: 25px;
-  font-size: 50pt;
+  font-size: 55px;
   font-weight: bold;
   text-shadow: 0 0 2px #9d9d9d;
   color: #ececec;
   height: 60px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
-body footer .content .head {
+body span .content .head {
   display: flex;
   margin: 1px 0 10px 40px;
   align-items: center;
   justify-content: space-between;
 }
-body footer .content .head > section {
+body span .content .head > section {
   display: flex;
   margin-right: 30px;
 }
-body footer .content .head #menu {
+body span .content .head #menu {
   display: flex;
   height: 60px;
   background-color: white;
   box-shadow: 2px 2px 3px grey;
 }
-body footer .content .head #menu > div {
+body span .content .head #menu > div {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   width: 120px;
   margin-left: 10px;
   height: 50px;
   margin-top: 5px;
 }
-body footer .content .head #menu > div > a {
+body span .content .head #menu > div > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -143,34 +145,34 @@ body footer .content .head #menu > div > a {
   color: black;
   font-size: 18px;
 }
-body footer .content .head #menu > div > a > img {
+body span .content .head #menu > div > a > img {
   width: 20px;
   height: 20px;
 }
-body footer .content .head #menu > div > a #last {
+body span .content .head #menu > div > a #last {
   width: 30px;
   height: 30px;
 }
-body footer .content .head #menu > div:last-child {
+body span .content .head #menu > div:last-child {
   border: none;
 }
-body footer .content .all {
+body span .content .all {
   display: flex;
   flex-direction: column;
   height: 150px;
   margin-top: 19px;
   justify-content: space-between;
 }
-body footer .content .all .user {
+body span .content .all .user {
   display: flex;
   justify-content: space-between;
   margin-left: 40px;
 }
-body footer .content .all .user > section {
+body span .content .all .user > section {
   display: flex;
   margin-right: 30px;
 }
-body footer .content .all .user .information {
+body span .content .all .user .information {
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
@@ -178,24 +180,24 @@ body footer .content .all .user .information {
   font-size: 10pt;
   text-align: center;
 }
-body footer .content .all .user .information .photo img {
+body span .content .all .user .information .photo img {
   width: 60px;
   height: 60px;
   border-radius: 60px;
 }
-body footer .content .all .user .information > div {
+body span .content .all .user .information > div {
   justify-content: center;
 }
-body footer .content .all .user .information .time {
+body span .content .all .user .information .time {
   color: #a0a0a0;
 }
-body footer .content .all .user .information .like img {
+body span .content .all .user .information .like img {
   margin-right: 3px;
 }
-body footer .content .all .user .border {
+body span .content .all .user .border {
   margin-top: 34px;
 }
-body footer .content .all .user .abc {
+body span .content .all .user .abc {
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
@@ -206,31 +208,31 @@ body footer .content .all .user .abc {
   height: 150px;
   box-shadow: 2px 2px 3px grey;
 }
-body footer .content .all .user .abc .as {
+body span .content .all .user .abc .as {
   height: 90px;
   margin-top: 10px;
 }
-body footer .content .all .user .abc .as#images {
+body span .content .all .user .abc .as#images {
   display: flex;
   justify-content: space-between;
 }
-body footer .content .all .user .abc .as img {
+body span .content .all .user .abc .as img {
   padding-right: 46px;
   height: 90px;
   border-right: 1px solid rgba(168, 198, 193, 0.52);
 }
-body footer .content .all .user .abc .as img:last-child {
+body span .content .all .user .abc .as img:last-child {
   border: none;
   padding-right: 0;
 }
-body footer .content .all .user .abc .foot {
+body span .content .all .user .abc .foot {
   display: flex;
   margin-top: 10px;
   border-top: 1px solid rgba(168, 198, 193, 0.52);
   padding-top: 10px;
   align-items: center;
 }
-body footer .content .all .user .abc .foot input {
+body span .content .all .user .abc .foot input {
   margin-left: 20px;
   width: 300px;
   border-radius: 20px;
@@ -241,41 +243,41 @@ body footer .content .all .user .abc .foot input {
   background: url(../image/123.png) no-repeat;
   background-position: 245px center;
 }
-body footer .content .all .user .abc .foot div {
+body span .content .all .user .abc .foot div {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   margin-left: 25px;
   padding-right: 25px;
 }
-body footer .content .all .user .abc .foot section {
+body span .content .all .user .abc .foot section {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   margin-left: 25px;
   padding-right: 25px;
 }
-body footer .content .all .user .abc .foot section:last-child {
+body span .content .all .user .abc .foot section:last-child {
   border: none;
 }
-body footer .content .all .user .abc .foot section img {
+body span .content .all .user .abc .foot section img {
   width: 15px;
   height: 15px;
 }
-body footer .content .all .user .abc .foot section img.aaa {
+body span .content .all .user .abc .foot section img.aaa {
   width: 13px;
   height: 13px;
 }
-body footer .users {
-  width: 25%;
+body span .users {
+  width: 306px;
   flex-direction: column;
   margin-left: 30px;
   align-items: center;
 }
-body footer .users .use {
+body span .users .use {
   border-bottom: 1px solid rgba(168, 198, 193, 0.52);
   padding-bottom: 20px;
 }
-body footer .users .use div:first-child {
+body span .users .use div:first-child {
   margin-top: 1px;
 }
-body footer .users .use div {
+body span .users .use div {
   padding: 5px 0 0 10px;
   font-size: 12px;
   margin-top: 5px;
@@ -284,22 +286,22 @@ body footer .users .use div {
   box-shadow: 2px 2px 3px grey;
   color: gray;
 }
-body footer .users .use div h4 {
+body span .users .use div h4 {
   margin-bottom: 5px;
   margin-top: 5px;
   color: black;
 }
-body footer .users .use img {
+body span .users .use img {
   float: left;
   margin: 0 7px 0 0;
   border-radius: 50px;
   width: 50px;
   height: 50px;
 }
-body footer .users .used {
+body span .users .used {
   padding-top: 20px;
 }
-body footer .users .used div {
+body span .users .used div {
   height: 31px;
   margin: 0;
   background-color: white;
@@ -311,24 +313,24 @@ body footer .users .used div {
   font-size: 9pt;
   color: #a0a0a0;
 }
-body footer .users .used div:last-child {
+body span .users .used div:last-child {
   padding-bottom: 9px;
 }
-body footer .users .used div img {
+body span .users .used div img {
   height: 10px;
   width: 10px;
   border-radius: 30px;
 }
-body footer .users .used div > section {
+body span .users .used div > section {
   display: flex;
   font-size: 10pt;
   align-items: center;
   color: black;
 }
-body footer .users .used div > section > a {
+body span .users .used div > section > a {
   padding-top: 1px;
 }
-body footer .users .used div > section img {
+body span .users .used div > section img {
   width: 25px;
   height: 25px;
   margin-right: 15px;
