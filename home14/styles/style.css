@@ -48,8 +48,7 @@ body header div form input {
   border-radius: 20px;
   padding-right: 20px;
   padding-left: 5px;
-  background: white url(../image/search.png) no-repeat;
-  background-position: 250px center;
+  background: white url(../image/search.png) no-repeat 250px center;
   border: none;
   margin-left: 30px;
 }
@@ -84,12 +83,12 @@ body header div #user > button:focus {
   outline: none;
   box-shadow: 0 0 10px #00004f;
 }
-body span {
+body div#information {
   width: 1020px;
   margin: 10px auto 0 auto;
   display: flex;
 }
-body span div.border {
+body div#information div.border {
   border-right: 10px solid white;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
@@ -97,13 +96,13 @@ body span div.border {
   height: 1px;
   margin-top: 25px;
 }
-body span .content {
+body div#information .content {
   display: flex;
   width: 693px;
   flex-direction: column;
   border-right: 1px solid rgba(168, 198, 193, 0.52);
 }
-body span .content #plus {
+body div#information .content #plus {
   margin-left: 25px;
   font-size: 55px;
   font-weight: bold;
@@ -113,30 +112,30 @@ body span .content #plus {
   display: flex;
   align-items: flex-end;
 }
-body span .content .head {
+body div#information .content .head {
   display: flex;
   margin: 1px 0 10px 40px;
   align-items: center;
   justify-content: space-between;
 }
-body span .content .head > section {
+body div#information .content .head > section {
   display: flex;
   margin-right: 30px;
 }
-body span .content .head #menu {
+body div#information .content .head #menu {
   display: flex;
   height: 60px;
   background-color: white;
   box-shadow: 2px 2px 3px grey;
 }
-body span .content .head #menu > div {
+body div#information .content .head #menu > div {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   width: 120px;
   margin-left: 10px;
   height: 50px;
   margin-top: 5px;
 }
-body span .content .head #menu > div > a {
+body div#information .content .head #menu > div > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -145,34 +144,34 @@ body span .content .head #menu > div > a {
   color: black;
   font-size: 18px;
 }
-body span .content .head #menu > div > a > img {
+body div#information .content .head #menu > div > a > img {
   width: 20px;
   height: 20px;
 }
-body span .content .head #menu > div > a #last {
+body div#information .content .head #menu > div > a #last {
   width: 30px;
   height: 30px;
 }
-body span .content .head #menu > div:last-child {
+body div#information .content .head #menu > div:last-child {
   border: none;
 }
-body span .content .all {
+body div#information .content .all {
   display: flex;
   flex-direction: column;
   height: 150px;
   margin-top: 19px;
   justify-content: space-between;
 }
-body span .content .all .user {
+body div#information .content .all .user {
   display: flex;
   justify-content: space-between;
   margin-left: 40px;
 }
-body span .content .all .user > section {
+body div#information .content .all .user > section {
   display: flex;
   margin-right: 30px;
 }
-body span .content .all .user .information {
+body div#information .content .all .user .information {
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
@@ -180,24 +179,25 @@ body span .content .all .user .information {
   font-size: 10pt;
   text-align: center;
 }
-body span .content .all .user .information .photo img {
+body div#information .content .all .user .information .photo img {
   width: 60px;
   height: 60px;
   border-radius: 60px;
 }
-body span .content .all .user .information > div {
+body div#information .content .all .user .information > div {
   justify-content: center;
 }
-body span .content .all .user .information .time {
+body div#information .content .all .user .information .time {
   color: #a0a0a0;
+  font-size: 9pt;
 }
-body span .content .all .user .information .like img {
+body div#information .content .all .user .information .like img {
   margin-right: 3px;
 }
-body span .content .all .user .border {
+body div#information .content .all .user .border {
   margin-top: 34px;
 }
-body span .content .all .user .abc {
+body div#information .content .all .user .abc {
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
@@ -208,31 +208,31 @@ body span .content .all .user .abc {
   height: 150px;
   box-shadow: 2px 2px 3px grey;
 }
-body span .content .all .user .abc .as {
+body div#information .content .all .user .abc .as {
   height: 90px;
   margin-top: 10px;
 }
-body span .content .all .user .abc .as#images {
+body div#information .content .all .user .abc .as#images {
   display: flex;
   justify-content: space-between;
 }
-body span .content .all .user .abc .as img {
+body div#information .content .all .user .abc .as img {
   padding-right: 46px;
   height: 90px;
   border-right: 1px solid rgba(168, 198, 193, 0.52);
 }
-body span .content .all .user .abc .as img:last-child {
+body div#information .content .all .user .abc .as img:last-child {
   border: none;
   padding-right: 0;
 }
-body span .content .all .user .abc .foot {
+body div#information .content .all .user .abc .foot {
   display: flex;
   margin-top: 10px;
   border-top: 1px solid rgba(168, 198, 193, 0.52);
   padding-top: 10px;
   align-items: center;
 }
-body span .content .all .user .abc .foot input {
+body div#information .content .all .user .abc .foot input {
   margin-left: 20px;
   width: 300px;
   border-radius: 20px;
@@ -240,44 +240,43 @@ body span .content .all .user .abc .foot input {
   height: 20px;
   padding-left: 10px;
   padding-right: 25px;
-  background: url(../image/123.png) no-repeat;
-  background-position: 245px center;
+  background: url(../image/123.png) no-repeat 245px center;
 }
-body span .content .all .user .abc .foot div {
+body div#information .content .all .user .abc .foot div {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   margin-left: 25px;
   padding-right: 25px;
 }
-body span .content .all .user .abc .foot section {
+body div#information .content .all .user .abc .foot section {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   margin-left: 25px;
   padding-right: 25px;
 }
-body span .content .all .user .abc .foot section:last-child {
+body div#information .content .all .user .abc .foot section:last-child {
   border: none;
 }
-body span .content .all .user .abc .foot section img {
+body div#information .content .all .user .abc .foot section img {
   width: 15px;
   height: 15px;
 }
-body span .content .all .user .abc .foot section img.aaa {
+body div#information .content .all .user .abc .foot section img.aaa {
   width: 13px;
   height: 13px;
 }
-body span .users {
+body div#information .users {
   width: 306px;
   flex-direction: column;
   margin-left: 30px;
   align-items: center;
 }
-body span .users .use {
+body div#information .users .use {
   border-bottom: 1px solid rgba(168, 198, 193, 0.52);
   padding-bottom: 20px;
 }
-body span .users .use div:first-child {
+body div#information .users .use div:first-child {
   margin-top: 1px;
 }
-body span .users .use div {
+body div#information .users .use div {
   padding: 5px 0 0 10px;
   font-size: 12px;
   margin-top: 5px;
@@ -286,22 +285,22 @@ body span .users .use div {
   box-shadow: 2px 2px 3px grey;
   color: gray;
 }
-body span .users .use div h4 {
+body div#information .users .use div h4 {
   margin-bottom: 5px;
   margin-top: 5px;
   color: black;
 }
-body span .users .use img {
+body div#information .users .use img {
   float: left;
   margin: 0 7px 0 0;
   border-radius: 50px;
   width: 50px;
   height: 50px;
 }
-body span .users .used {
+body div#information .users .used {
   padding-top: 20px;
 }
-body span .users .used div {
+body div#information .users .used div {
   height: 31px;
   margin: 0;
   background-color: white;
@@ -313,24 +312,24 @@ body span .users .used div {
   font-size: 9pt;
   color: #a0a0a0;
 }
-body span .users .used div:last-child {
+body div#information .users .used div:last-child {
   padding-bottom: 9px;
 }
-body span .users .used div img {
+body div#information .users .used div img {
   height: 10px;
   width: 10px;
   border-radius: 30px;
 }
-body span .users .used div > section {
+body div#information .users .used div > section {
   display: flex;
   font-size: 10pt;
   align-items: center;
   color: black;
 }
-body span .users .used div > section > a {
+body div#information .users .used div > section > a {
   padding-top: 1px;
 }
-body span .users .used div > section img {
+body div#information .users .used div > section img {
   width: 25px;
   height: 25px;
   margin-right: 15px;
