@@ -17,7 +17,7 @@ body img.icon {
   border-radius: 20px;
 }
 body header {
-  background: linear-gradient(to top, #3944fe, #2c74f1);
+  background: linear-gradient(to bottom, #3034c8, #3383ff);
   flex: 0 0 40px;
   margin: 0 auto 0 auto;
   width: 1360px;
@@ -58,7 +58,6 @@ body header div #user {
   color: white;
   margin-right: 200px;
   align-items: center;
-  justify-content: center;
 }
 body header div #user > a {
   text-decoration: none;
@@ -217,7 +216,7 @@ body div#information .content .all .user .abc .as#images {
   justify-content: space-between;
 }
 body div#information .content .all .user .abc .as img {
-  padding-right: 46px;
+  padding-right: 22px;
   height: 90px;
   border-right: 1px solid rgba(168, 198, 193, 0.52);
 }
