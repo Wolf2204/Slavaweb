@@ -12,13 +12,13 @@ body div.like img {
   height: 12px;
 }
 body img.icon {
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
 }
 body header {
   background: linear-gradient(#4e69a2, #3b5998 50%);
-  flex: 0 0 40px;
+  flex: 0 0 45px;
   margin: 0 auto 0 auto;
   width: 1360px;
 }
@@ -63,24 +63,29 @@ body header div #user {
   margin-right: 200px;
   align-items: center;
 }
+body header div #user p {
+  margin: 0;
+  height: 23px;
+}
 body header div #user > a {
   text-decoration: none;
   color: #fff;
 }
 body header div #user > section {
   color: #212f6e;
+  height: 23px;
 }
 body header div #user > button {
-  height: 20px;
-  width: 20px;
-  border: 1.5px solid #26325c;
+  height: 23px;
+  width: 23px;
   border-radius: 20px;
-  background-color: #3a5c99;
+  border: none;
   color: #344a82;
-  font-size: 10px;
-  padding-left: 5px;
+  font-size: 9px;
+  background-image: linear-gradient(#496dbb, #415583 50%);
   padding-top: 0;
-  box-shadow: 0 0 10px #26325c;
+  box-shadow: 0.5px 0.5px black, -0.5px -0.5px #26325c;
+  text-shadow: 0.1px 0.1px black, -0.1px -0.1px #26325c;
 }
 body header div #user > button:focus {
   outline: none;
@@ -88,7 +93,7 @@ body header div #user > button:focus {
 }
 body div#information {
   width: 1020px;
-  margin: 10px auto 0 auto;
+  margin: 15px auto 0 auto;
   display: flex;
   align-items: stretch;
 }
@@ -118,7 +123,7 @@ body div#information .content #plus {
 }
 body div#information .content .head {
   display: flex;
-  margin: 1px 0 10px 40px;
+  margin: 1px 0 0 40px;
   align-items: center;
   justify-content: space-between;
 }
