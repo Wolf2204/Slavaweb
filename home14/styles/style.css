@@ -12,9 +12,9 @@ body div.like img {
   height: 12px;
 }
 body img.icon {
-  height: 23px;
-  width: 23px;
-  border-radius: 23px;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
 }
 body header {
   background: linear-gradient(#5476b4, #3b5998 50%);
@@ -77,8 +77,8 @@ body header div #user > section {
   margin: 0 20px 0 20px;
 }
 body header div #user > button {
-  height: 23px;
-  width: 23px;
+  height: 20px;
+  width: 20px;
   border-radius: 20px;
   border: none;
   color: #344a82;
