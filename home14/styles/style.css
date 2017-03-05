@@ -74,6 +74,7 @@ body header div #user > a {
 body header div #user > section {
   color: #212f6e;
   height: 23px;
+  margin: 0 20px 0 20px;
 }
 body header div #user > button {
   height: 23px;
