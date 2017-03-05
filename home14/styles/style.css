@@ -17,7 +17,7 @@ body img.icon {
   border-radius: 20px;
 }
 body header {
-  background: linear-gradient(to bottom, #3034c8, #3383ff);
+  background: linear-gradient(#4e69a2, #3b5998 50%);
   flex: 0 0 40px;
   margin: 0 auto 0 auto;
   width: 1360px;
@@ -34,7 +34,11 @@ body header div form {
   width: 350px;
   align-items: center;
   justify-content: center;
-  margin-left: 253px;
+  margin-left: 250px;
+}
+body header div form label {
+  font-size: 18pt;
+  color: white;
 }
 body header div form img {
   margin-left: 25px;
@@ -48,7 +52,7 @@ body header div form input {
   border-radius: 20px;
   padding-right: 20px;
   padding-left: 5px;
-  background: white url(../image/search.png) no-repeat 250px center;
+  background: white url(../image/search.png) no-repeat 240px center;
   border: none;
   margin-left: 30px;
 }
@@ -69,23 +73,24 @@ body header div #user > section {
 body header div #user > button {
   height: 20px;
   width: 20px;
-  border: 1px solid #000088;
+  border: 1.5px solid #26325c;
   border-radius: 20px;
-  background-color: #000096;
-  color: #0f0a72;
+  background-color: #3a5c99;
+  color: #344a82;
   font-size: 10px;
   padding-left: 5px;
   padding-top: 0;
-  box-shadow: 0 0 5px #000072;
+  box-shadow: 0 0 10px #26325c;
 }
 body header div #user > button:focus {
   outline: none;
-  box-shadow: 0 0 10px #00004f;
+  box-shadow: 0 0 20px #232a51;
 }
 body div#information {
   width: 1020px;
   margin: 10px auto 0 auto;
   display: flex;
+  align-items: stretch;
 }
 body div#information div.border {
   border-right: 10px solid white;
@@ -105,7 +110,7 @@ body div#information .content #plus {
   margin-left: 25px;
   font-size: 55px;
   font-weight: bold;
-  text-shadow: 0 0 2px #9d9d9d;
+  text-shadow: -1px -1px black, 1px 1px white;
   color: #ececec;
   height: 60px;
   display: flex;
@@ -119,58 +124,65 @@ body div#information .content .head {
 }
 body div#information .content .head > section {
   display: flex;
-  margin-right: 30px;
 }
 body div#information .content .head #menu {
   display: flex;
   height: 60px;
-  background-color: white;
   box-shadow: 2px 2px 3px grey;
+  margin-right: 30px;
 }
-body div#information .content .head #menu > div {
-  border-right: 1px solid rgba(168, 198, 193, 0.52);
-  width: 120px;
-  margin-left: 10px;
-  height: 50px;
-  margin-top: 5px;
+body div#information .content .head #menu > section {
+  display: flex;
+  align-content: stretch;
+  background-color: white;
 }
-body div#information .content .head #menu > div > a {
+body div#information .content .head #menu > section:hover {
+  background-color: lightgray;
+}
+body div#information .content .head #menu > section > a {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
   text-decoration: none;
   color: black;
   font-size: 18px;
 }
-body div#information .content .head #menu > div > a > img {
+body div#information .content .head #menu > section > a div {
+  width: 120px;
+  margin-left: 10px;
+  height: 50px;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  border-right: 1px solid rgba(168, 198, 193, 0.52);
+}
+body div#information .content .head #menu > section > a img {
   width: 20px;
   height: 20px;
 }
-body div#information .content .head #menu > div > a #last {
+body div#information .content .head #menu > section > a #last {
   width: 30px;
   height: 30px;
 }
 body div#information .content .head #menu > div:last-child {
   border: none;
 }
-body div#information .content .all {
+body div#information .all {
   display: flex;
   flex-direction: column;
   height: 150px;
   margin-top: 19px;
   justify-content: space-between;
 }
-body div#information .content .all .user {
+body div#information .all .user {
   display: flex;
   justify-content: space-between;
   margin-left: 40px;
 }
-body div#information .content .all .user > section {
+body div#information .all .user > section {
   display: flex;
   margin-right: 30px;
 }
-body div#information .content .all .user .information {
+body div#information .all .user .information {
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
@@ -178,25 +190,25 @@ body div#information .content .all .user .information {
   font-size: 10pt;
   text-align: center;
 }
-body div#information .content .all .user .information .photo img {
+body div#information .all .user .information .photo img {
   width: 60px;
   height: 60px;
   border-radius: 60px;
 }
-body div#information .content .all .user .information > div {
+body div#information .all .user .information > div {
   justify-content: center;
 }
-body div#information .content .all .user .information .time {
+body div#information .all .user .information .time {
   color: #a0a0a0;
   font-size: 9pt;
 }
-body div#information .content .all .user .information .like img {
+body div#information .all .user .information .like img {
   margin-right: 3px;
 }
-body div#information .content .all .user .border {
+body div#information .all .user .border {
   margin-top: 34px;
 }
-body div#information .content .all .user .abc {
+body div#information .all .user .abc {
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
@@ -207,31 +219,31 @@ body div#information .content .all .user .abc {
   height: 150px;
   box-shadow: 2px 2px 3px grey;
 }
-body div#information .content .all .user .abc .as {
+body div#information .all .user .abc .as {
   height: 90px;
   margin-top: 10px;
 }
-body div#information .content .all .user .abc .as#images {
+body div#information .all .user .abc .as#images {
   display: flex;
   justify-content: space-between;
 }
-body div#information .content .all .user .abc .as img {
+body div#information .all .user .abc .as img {
   padding-right: 22px;
   height: 90px;
   border-right: 1px solid rgba(168, 198, 193, 0.52);
 }
-body div#information .content .all .user .abc .as img:last-child {
+body div#information .all .user .abc .as img:last-child {
   border: none;
   padding-right: 0;
 }
-body div#information .content .all .user .abc .foot {
+body div#information .all .user .abc .foot {
   display: flex;
   margin-top: 10px;
   border-top: 1px solid rgba(168, 198, 193, 0.52);
   padding-top: 10px;
   align-items: center;
 }
-body div#information .content .all .user .abc .foot input {
+body div#information .all .user .abc .foot input {
   margin-left: 20px;
   width: 300px;
   border-radius: 20px;
@@ -241,94 +253,104 @@ body div#information .content .all .user .abc .foot input {
   padding-right: 25px;
   background: url(../image/123.png) no-repeat 245px center;
 }
-body div#information .content .all .user .abc .foot div {
+body div#information .all .user .abc .foot div {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   margin-left: 25px;
   padding-right: 25px;
 }
-body div#information .content .all .user .abc .foot section {
+body div#information .all .user .abc .foot section {
   border-right: 1px solid rgba(168, 198, 193, 0.52);
   margin-left: 25px;
   padding-right: 25px;
 }
-body div#information .content .all .user .abc .foot section:last-child {
+body div#information .all .user .abc .foot section:last-child {
   border: none;
 }
-body div#information .content .all .user .abc .foot section img {
+body div#information .all .user .abc .foot section img {
   width: 15px;
   height: 15px;
 }
-body div#information .content .all .user .abc .foot section img.aaa {
+body div#information .all .user .abc .foot section img.aaa {
   width: 13px;
   height: 13px;
 }
-body div#information .users {
-  width: 306px;
+body .users {
+  width: 260px;
   flex-direction: column;
   margin-left: 30px;
   align-items: center;
 }
-body div#information .users .use {
+body .users .use {
   border-bottom: 1px solid rgba(168, 198, 193, 0.52);
   padding-bottom: 20px;
 }
-body div#information .users .use div:first-child {
+body .users .use .contra {
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 3px grey;
+}
+body .users .use .contra:first-child {
   margin-top: 1px;
 }
-body div#information .users .use div {
+body .users .use .contra:hover {
+  background-color: lightgray;
+}
+body .users .use .contra a {
+  text-decoration: none;
+}
+body .users .use .contra a div {
+  height: 55px;
   padding: 5px 0 0 10px;
   font-size: 12px;
-  margin-top: 5px;
-  background-color: white;
-  height: 55px;
-  box-shadow: 2px 2px 3px grey;
   color: gray;
 }
-body div#information .users .use div h4 {
+body .users .use .contra a div h4 {
   margin-bottom: 5px;
   margin-top: 5px;
   color: black;
 }
-body div#information .users .use img {
+body .users .use img {
   float: left;
   margin: 0 7px 0 0;
   border-radius: 50px;
   width: 50px;
   height: 50px;
 }
-body div#information .users .used {
+body .users .used {
   padding-top: 20px;
 }
-body div#information .users .used div {
-  height: 31px;
-  margin: 0;
+body .users .used .contra2 {
+  height: 35px;
   background-color: white;
   box-shadow: 2px 2px 3px grey;
-  padding: 5px 20px 5px 10px;
+}
+body .users .used .contra2 a {
+  text-decoration: none;
+}
+body .users .used .contra2:hover {
+  background-color: lightgray;
+}
+body .users .used .contra2 a div {
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 20px 5px 10px;
   font-size: 9pt;
   color: #a0a0a0;
 }
-body div#information .users .used div:last-child {
-  padding-bottom: 9px;
-}
-body div#information .users .used div img {
+body .users .used .contra2 a div img {
   height: 10px;
   width: 10px;
   border-radius: 30px;
 }
-body div#information .users .used div > section {
+body .users .used .contra2 a div > section {
   display: flex;
   font-size: 10pt;
   align-items: center;
   color: black;
 }
-body div#information .users .used div > section > a {
-  padding-top: 1px;
-}
-body div#information .users .used div > section img {
+body .users .used .contra2 a div > section img {
   width: 25px;
   height: 25px;
   margin-right: 15px;
@@ -337,7 +359,7 @@ h1 {
   margin: 0 0 5px 0;
   font-size: 20px;
 }
-img.rightimg {
+img.right {
   float: right;
   margin: 0 0 0 7px;
 }

@@ -16,7 +16,7 @@ body {
     border-radius: 20px;
   }
   header {
-    background: linear-gradient(to bottom, #3034c8, #3383ff);
+    background: linear-gradient(#4e69a2, #3b5998 50%);
     flex: 0 0 40px;
     margin: 0 auto 0 auto;
     width: 1360px;
@@ -31,7 +31,11 @@ body {
         width: 350px;
         align-items: center;
         justify-content: center;
-        margin-left: 253px;
+        margin-left: 250px;
+        label {
+          font-size: 18pt;
+          color: white;
+        }
         img {
           margin-left: 25px;
           width: 10px;
@@ -44,7 +48,7 @@ body {
           border-radius: 20px;
           padding-right: 20px;
           padding-left: 5px;
-          background: white url(../image/search.png) no-repeat 250px center;
+          background: white url(../image/search.png) no-repeat 240px center;
           border: none;
           margin-left: 30px;
         }
@@ -56,6 +60,7 @@ body {
         color: white;
         margin-right: 200px;
         align-items: center;
+
         > a {
           text-decoration: none;
           color: #fff;
@@ -67,17 +72,17 @@ body {
         > button {
           height: 20px;
           width: 20px;
-          border: 1px solid #000088;
+          border: 1.5px solid #26325c;
           border-radius: 20px;
-          background-color: #000096;
-          color: #0f0a72;
+          background-color: #3a5c99;
+          color: #344a82;
           font-size: 10px;
           padding-left: 5px;
           padding-top: 0;
-          box-shadow: 0 0 5px #000072;
+          box-shadow: 0 0 10px #26325c;
           &:focus {
             outline: none;
-            box-shadow: 0 0 10px #00004f;
+            box-shadow: 0 0 20px #232a51;
           }
         }
       }
@@ -88,6 +93,7 @@ body {
     width: 1020px;
     margin: 10px auto 0 auto;
     display: flex;
+    align-items: stretch;
 
     div.border {
       border-right: 10px solid white;
@@ -108,7 +114,7 @@ body {
         margin-left: 25px;
         font-size: 55px;
         font-weight: bold;
-        text-shadow: 0 0 2px #9d9d9d;
+        text-shadow: -1px -1px black, 1px 1px white;
         color: #ececec;
         height: 60px;
         display: flex;
@@ -122,29 +128,38 @@ body {
         justify-content: space-between;
         > section {
           display: flex;
-          margin-right: 30px;
         }
 
         #menu {
           display: flex;
           height: 60px;
-          background-color: white;
           box-shadow: 2px 2px 3px grey;
-          > div {
-            border-right: 1px solid rgba(168, 198, 193, 0.52);
-            width: 120px;
-            margin-left: 10px;
-            height: 50px;
-            margin-top: 5px;
+          margin-right: 30px;
+          > section {
+
+            display: flex;
+            align-content: stretch;
+            background-color: white;
+            &:hover {
+              background-color: lightgray;
+            }
+
             > a {
               width: 100%;
               height: 100%;
-              display: flex;
-              align-items: center;
               text-decoration: none;
               color: black;
               font-size: 18px;
-              > img {
+              div {
+                width: 120px;
+                margin-left: 10px;
+                height: 50px;
+                display: flex;
+                margin-top: 5px;
+                align-items: center;
+                border-right: 1px solid rgba(168, 198, 193, 0.52);
+              }
+              img {
                 width: 20px;
                 height: 20px;
               }
@@ -159,182 +174,200 @@ body {
           }
         }
       }
-      .all {
+    }
+    .all {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      margin-top: 19px;
+      justify-content: space-between;
+      .user {
         display: flex;
-        flex-direction: column;
-        height: 150px;
-        margin-top: 19px;
         justify-content: space-between;
-        .user {
+        margin-left: 40px;
+        > section {
           display: flex;
-          justify-content: space-between;
-          margin-left: 40px;
-          > section {
-            display: flex;
-            margin-right: 30px;
+          margin-right: 30px;
+        }
+
+        .information {
+          display: flex;
+          flex-direction: column;
+          margin: 10px 0 10px 0;
+          min-width: 80px;
+          font-size: 10pt;
+          text-align: center;
+          .photo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
           }
-
-          .information {
-            display: flex;
-            flex-direction: column;
-            margin: 10px 0 10px 0;
-            min-width: 80px;
-            font-size: 10pt;
-            text-align: center;
-            .photo img {
-              width: 60px;
-              height: 60px;
-              border-radius: 60px;
-            }
-            > div {
-              justify-content: center;
-            }
-            .time {
-              color: #a0a0a0;
-              font-size: 9pt;
-            }
-            .like img {
-              margin-right: 3px;
-            }
+          > div {
+            justify-content: center;
           }
-
-          .border {
-            margin-top: 34px;
+          .time {
+            color: #a0a0a0;
+            font-size: 9pt;
           }
-          .abc {
-            display: flex;
-            flex-direction: column;
-            margin: 10px 0 10px 0;
-            padding-left: 10px;
-            padding-right: 10px;
-            width: 503px;
-            background-color: white;
-            height: 150px;
-            box-shadow: 2px 2px 3px grey;
+          .like img {
+            margin-right: 3px;
+          }
+        }
 
-            .as {
-              height: 90px;
-              margin-top: 10px;
-              &#images {
-                display: flex;
-                justify-content: space-between;
-              }
-              img {
+        .border {
+          margin-top: 34px;
+        }
+        .abc {
+          display: flex;
+          flex-direction: column;
+          margin: 10px 0 10px 0;
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 503px;
+          background-color: white;
+          height: 150px;
+          box-shadow: 2px 2px 3px grey;
 
-                padding-right: 22px;
-                height: 90px;
-                border-right: 1px solid rgba(168, 198, 193, 0.52);
-              }
-              img:last-child {
-                border: none;
-                padding-right: 0;
-              }
-
-            }
-
-            .foot {
+          .as {
+            height: 90px;
+            margin-top: 10px;
+            &#images {
               display: flex;
-              margin-top: 10px;
-              border-top: 1px solid rgba(168, 198, 193, 0.52);
-              padding-top: 10px;
-              align-items: center;
+              justify-content: space-between;
+            }
+            img {
 
-              input {
-                margin-left: 20px;
-                width: 300px;
-                border-radius: 20px;
-                border: 0.5px solid rgba(168, 198, 193, 0.52);
-                height: 20px;
-                padding-left: 10px;
-                padding-right: 25px;
-                background: url(../image/123.png) no-repeat 245px center;
+              padding-right: 22px;
+              height: 90px;
+              border-right: 1px solid rgba(168, 198, 193, 0.52);
+            }
+            img:last-child {
+              border: none;
+              padding-right: 0;
+            }
+
+          }
+
+          .foot {
+            display: flex;
+            margin-top: 10px;
+            border-top: 1px solid rgba(168, 198, 193, 0.52);
+            padding-top: 10px;
+            align-items: center;
+
+            input {
+              margin-left: 20px;
+              width: 300px;
+              border-radius: 20px;
+              border: 0.5px solid rgba(168, 198, 193, 0.52);
+              height: 20px;
+              padding-left: 10px;
+              padding-right: 25px;
+              background: url(../image/123.png) no-repeat 245px center;
+            }
+            div {
+              border-right: 1px solid rgba(168, 198, 193, 0.52);
+              margin-left: 25px;
+              padding-right: 25px;
+            }
+            section {
+              border-right: 1px solid rgba(168, 198, 193, 0.52);
+              margin-left: 25px;
+              padding-right: 25px;
+
+              &:last-child {
+                border: none;
+
               }
-              div {
-                border-right: 1px solid rgba(168, 198, 193, 0.52);
-                margin-left: 25px;
-                padding-right: 25px;
+
+              img {
+                width: 15px;
+                height: 15px;
               }
-              section {
-                border-right: 1px solid rgba(168, 198, 193, 0.52);
-                margin-left: 25px;
-                padding-right: 25px;
-
-                &:last-child {
-                  border: none;
-
-                }
-
-                img {
-                  width: 15px;
-                  height: 15px;
-                }
-                img.aaa {
-                  width: 13px;
-                  height: 13px;
-                }
-
+              img.aaa {
+                width: 13px;
+                height: 13px;
               }
+
             }
           }
         }
       }
     }
-    .users {
-      width: 306px;
-      flex-direction: column;
-      margin-left: 30px;
-      align-items: center;
+  }
+  .users {
+    width: 260px;
+    flex-direction: column;
+    margin-left: 30px;
+    align-items: center;
 
-      .use {
-        border-bottom: 1px solid rgba(168, 198, 193, 0.52);
-        padding-bottom: 20px;
-        div:first-child {
+    .use {
+      border-bottom: 1px solid rgba(168, 198, 193, 0.52);
+      padding-bottom: 20px;
+
+      .contra {
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: 2px 2px 3px grey;
+        &:first-child {
           margin-top: 1px;
         }
-        div {
-          padding: 5px 0 0 10px;
-          font-size: 12px;
-          margin-top: 5px;
-          background-color: white;
-          height: 55px;
-          box-shadow: 2px 2px 3px grey;
-          color: gray;
+        &:hover {
+          background-color: lightgray;
+        }
 
-          h4 {
-            margin-bottom: 5px;
-            margin-top: 5px;
-            color: black;
+        a {
+          text-decoration: none;
 
+          div {
+            height: 55px;
+            padding: 5px 0 0 10px;
+            font-size: 12px;
+            color: gray;
+
+            h4 {
+              margin-bottom: 5px;
+              margin-top: 5px;
+              color: black;
+
+            }
           }
         }
+      }
 
-        img {
-          float: left;
-          margin: 0 7px 0 0;
-          border-radius: 50px;
-          width: 50px;
-          height: 50px;
+      img {
+        float: left;
+        margin: 0 7px 0 0;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+    .used {
+      padding-top: 20px;
+      .contra2 {
+        height: 35px;
+        background-color: white;
+        box-shadow: 2px 2px 3px grey;
+
+        a {
+          text-decoration: none;
         }
 
-      }
-      .used {
-        padding-top: 20px;
+        &:hover {
+          background-color: lightgray;
+        }
 
-        div {
-          height: 31px;
+        a div {
           margin: 0;
-          background-color: white;
-          box-shadow: 2px 2px 3px grey;
-          padding: 5px 20px 5px 10px;
           display: flex;
           justify-content: space-between;
           align-items: center;
+          padding: 5px 20px 5px 10px;
           font-size: 9pt;
           color: #a0a0a0;
 
-          &:last-child {
-            padding-bottom: 9px;
-          }
           img {
             height: 10px;
             width: 10px;
@@ -346,10 +379,7 @@ body {
             font-size: 10pt;
             align-items: center;
             color: black;
-            > a {
-              padding-top: 1px;
 
-            }
             img {
               width: 25px;
               height: 25px;
@@ -368,7 +398,7 @@ h1 {
   font-size: 20px;
 }
 
-img.rightimg {
+img.right {
   float: right;
   margin: 0 0 0 7px;
 }
@@ -382,4 +412,5 @@ input:focus {
   outline: none;
   box-shadow: inset -1px 1px 10px lightgray, 1px -1px lightgray, 0 0 8px #0000bd;
 }
+
 
