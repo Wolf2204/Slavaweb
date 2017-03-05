@@ -52,7 +52,7 @@ body header div form input {
   border-radius: 20px;
   padding-right: 20px;
   padding-left: 5px;
-  background: white url(../image/search.png) no-repeat 310px center;
+  background: white url(../image/search.png) no-repeat 257px center;
   border: none;
   margin-left: 10px;
 }
@@ -231,6 +231,10 @@ body div#information .all .user .abc .as {
 body div#information .all .user .abc .as#images {
   display: flex;
   justify-content: space-between;
+}
+body div#information .all .user .abc .as h1 {
+  font-size: 14pt;
+  font-weight: 500;
 }
 body div#information .all .user .abc .as img {
   padding-right: 22px;
